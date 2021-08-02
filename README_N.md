@@ -27,7 +27,7 @@ $ cricket
     > [link to Pretrained yolo-v3 weight file ](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137 )
 
 2. Create file yolov3-obj.cfg with the same content as in yolov3-voc.cfg (or copy yolov3-voc.cfg to yolov3-obj.cfg) and:
-   - change line batch to [`batch=64`](https://github.sec.samsung.net/21-DA-AI-VISION-SRID/Oven/blob/a656f62d04a334f7573b89e8597fb4ed11439e9f/Task4_Homogenous_Food_Count/model_training/yolo-v3/train-yolo-v3/yolov3-voc-train.cfg#L6)
+   - change line batch to [`batch=64`]()
    - change line subdivisions to subdivisions=16
    - change line max_batches to (classes*2000, but not less than number of training images and not less than 6000), f.e. max_batches=6000 if you train for 3 classes
    - change line steps to 80% and 90% of max_batches, f.e. steps=4800,5400
