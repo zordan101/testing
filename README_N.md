@@ -9,6 +9,11 @@ $lang
 $ cricket  
 * mfkfdkf  
 -skjdjsdmsd
+* Samsung  
+> [link to google](https://google.com)
+* Google  
+* ksdjskd  
+* 
 
 
       
