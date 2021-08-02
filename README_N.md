@@ -10,7 +10,7 @@ $ cricket
 * mfkfdkf  
 -skjdjsdmsd
 * Samsung  
-> [link to google](https://google.com)
+  > [link to google](https://google.com)
 * Google  
 * ksdjskd  
 * 
