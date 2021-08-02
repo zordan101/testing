@@ -13,10 +13,12 @@ $ cricket
   > [link to google](https://google.com)
 * Google  
 * ksdjskd  
-* google link     [link to google] 
+* google link     [link to google]  
+
 1. lskadjsdkslfkslf
-- jaksjadskdl
-- sdjskdjsldkncmxnc
+ - jaksjadskdl
+ - sdjskdjsldkncmxnc 
+
 2. ksjdjfd
 
       
