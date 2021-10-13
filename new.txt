@@ -1,2 +1,55 @@
-dkndkd
-sdksdsd;s;d
+#include <iostream>
+#include<string>
+using namespace std;
+string multiply(string s1, string s2) 
+{
+    string res="";
+    
+    int carry =0, m =0 ,sum_car=0,ind,t=0,g=1 ;
+    for(int i = s1.size()-1;i>=0;i--)
+    {
+        string temp="";
+        carry=0;
+        //cout<<i<<" res "<<res<<endl;
+        for(int j=s2.size()-1;j>=0;j--)
+        {
+            m=carry+(s1[i]-'0')*(s2[j]-'0');
+            temp=to_string(m%10)+temp;
+            carry =m/10;
+        }
+        if (carry>0)
+            temp=to_string(carry)+temp;
+        
+        if (res.empty())
+        {
+            res=temp;
+            continue;
+        }
+        cout<<res<<" temp "<<temp<<endl;
+        int k =res.size()-1-g, l = temp.size()-1;
+        
+        while(k>=0 && l>=0)
+        {
+            t= sum_car+(res[k]-'0')+(temp[l]-'0');
+            //cout<<"t "<<t<<" res[k] "<<res[k]<<endl;
+            res[k]=(char)(t%10+48);
+            sum_car =t/10;
+            k--;
+            l--;
+        }
+        while(l>=0)
+        {
+            res=to_string((temp[l]-'0')+sum_car)+res;
+            sum_car=0;
+            l--;
+        }
+        g++;
+        //cout<<res<<" "<<temp<<endl;
+        //cout<<"END "<<i<<endl;
+    }
+    return res;
+}
+int main() {
+    
+    cout<<multiply("100","100")<< endl;
+}
